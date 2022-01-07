@@ -489,6 +489,7 @@ typedef enum {
     AXP20X_LED_BLINK_1HZ,
     AXP20X_LED_BLINK_4HZ,
     AXP20X_LED_LOW_LEVEL,
+    AXP20X_LED_CHG_INDICATE,
 } axp_chgled_mode_t;
 
 typedef enum {

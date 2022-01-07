@@ -1315,6 +1315,10 @@ int AXP20X_Class::setChgLEDMode(axp_chgled_mode_t mode)
         val |= 0b00110000;
         _writeByte(AXP202_OFF_CTL, 1, &val);
         break;
+    case AXP20X_LED_CHG_INDICATE:
+        val &= ~_BV(3);
+        _writeByte(AXP202_OFF_CTL, 1, &val);
+        break;
     default:
         return AXP_FAIL;
     }
